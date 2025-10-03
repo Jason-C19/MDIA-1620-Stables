@@ -70,7 +70,7 @@ let horseName = "Jim";
 let horseAge = 21;
 let isHorseInside = true;
 let monthlyHorseFee = 500;
-let latePayFee = 500 * 0.2;
+let latePayFee = monthlyHorseFee * 0.2;
 
 let welcomeMessage ="Hello welcome to my stable, this is my horse" + horseName;
 let latePayMessage ="You're monthly pay for" + horseName + "is late!, you owe" + latePayFee;
@@ -144,7 +144,6 @@ let newHorse = {
 };
 
 horses.push(newHorse);
-console.log(horses);
 
 horseOne.isHungry = true;
 horseTwo.isHungry = true;
