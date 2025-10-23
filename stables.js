@@ -149,3 +149,30 @@ horseOne.isHungry = true;
 horseTwo.isHungry = true;
 horseThree.isHungry = true;
 newHorse.isHungry = false;
+
+//lab 2:///////////////////////////////////////////////////////////////////
+
+const totalStalls = 8;
+let horsesInStable = 4
+
+function availableStalls(horses) {
+    console.log("Available stalls: " + (totalStalls - horses));
+}
+
+availableStalls(horsesInStable);
+
+
+function latePaymentFee(horse) {
+    let fee = horse.monthlyrent * 0.2;
+    console.log(horse.name + "you owe a fee of $" + fee);
+}
+
+latePaymentFee(horseOne);
+
+
+function getNickname(horse) {
+    return horse.nickname;
+}
+
+let nickname = getNickname(horseOne);
+console.log("This horses nickname is:"  + nickname);
